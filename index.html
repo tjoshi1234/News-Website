@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <nav>
+
+        <div class="main-nav-div container">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1LARkjtQm_DtFoAWngNsINN2at3c-f_Y_Fg&usqp=CAU" alt="News" height="100px" width="100px">
+
+            <div class="nav-links">
+
+                <ul class="lists flex">
+                    <li class="hover-link" id="word">World</li>
+                    <li class="hover-link" id="finance">Finance</li>
+                    <li class="hover-link" id="technology">Technology</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+
+                <input type="text" placeholder="eg: politics">
+                <button type="submit" class="sub">Search</button>
+            </div>
+
+        </div>
+
+    </nav>
+    <main>
+
+        <div class="cards-container container flex" id="cards-container">
+
+    
+        </div>
+
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            
+            <div class="card-header">
+
+                <img src="https://via.placeholder.com/400x200" alt="news image" id="news-img">
+
+            </div>
+
+            <div class="card-content">
+                <h2 id="news-title">This is the Title</h2>
+                <h4 id="news-src" style="margin-top: 10px;">End Gadget</h4>
+                <p class="news-desc" id="news-desc" style="margin-top: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium facilis, dolorum unde eius iusto ullam nesciunt incidunt possimus cumque blanditiis!</p>
+
+            </div>
+
+        </div> 
+
+    </template>
+       
+    <script src="index.js"></script>
+</body>
+</html>

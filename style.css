@@ -1,0 +1,147 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --primary-text-color: #183b56;
+
+}
+
+.flex{
+
+    display: flex;
+}
+
+.container{
+
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}  
+
+
+nav{
+    background-color:#f3faff;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 4px #bbd0e2;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+}
+
+body{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rosybrown;
+}
+
+ul{
+    list-style: none;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    color: black
+    /* line-height: 1.4rem; */
+}
+
+li{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-nav-div{
+
+    display: flex;
+    justify-content: space-between;
+    padding-block: 8px;
+    /* background-color: aqua; */
+}
+
+.nav-links{
+
+    padding-top: 20px;
+}
+
+.lists{
+
+    gap: 26px;
+}
+
+.hover-link{
+
+    cursor: pointer;
+    
+}
+
+.hover-link:hover{
+
+    color:green;
+}
+
+.hover-link:active{
+
+    color: red;
+}
+
+.search-bar{
+
+    height: 22px;
+    gap: 8px;
+    /* padding-top: 20px; */
+    margin-top: 10px;
+}
+
+.sub{
+
+    background-color: aliceblue;
+}
+
+.sub:hover{
+    cursor: pointer;
+}
+
+main{
+
+    padding-block: 20px;
+    margin-top: 100px;
+}
+
+.cards-container{
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    row-gap: 30px;
+}
+
+.card{
+
+    width: 400px;
+    min-height: 200px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #f3faff;
+    overflow: hidden;
+    box-shadow: 0 0 4px #d4ecff;
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+
+    background-color: #f9fdff;
+    box-shadow: 1px 1px 8px #d4ecff;
+    transform: translateY(-2px);
+}
+
+.card-content{
+
+    margin-top: 10px;
+}
